@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Lorem</title>
+  <style>
+
+    * {
+      /*outline: 1px solid red;*/
+    }
+
+
+    .frame {
+      width: 700px;
+      height: 432px;
+      outline: 1px solid whiteSmoke;
+      position: absolute;
+      left: 50%;
+      margin-left: -350px;
+      top: 50%;
+      margin-top: -216px;
+      background-image: url(lampada.png);
+      background-size: auto 100%;
+    }
+
+    .lampada {
+    }
+
+    .lampada--segmento-1 {
+      position: absolute;
+      top: 31px;
+      left: 173px;
+      z-index: 99;
+      overflow: hidden;
+      width: 225px;
+      height: 225px;
+      border-radius: 50%;
+      background-color: #FF0;
+      /*z-index: 100;*/
+    }
+
+      .lampada--reflexo {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 50%;
+        height: 50%;
+        background:
+          -webkit-radial-gradient(center center, 80% 80%, rgba(255, 255, 255, 1), rgba(255, 255, 0, 1)),
+          yellow;
+      }
+
+    .lampada--segmento-2 {
+      position: absolute;
+      top: 189px;
+      left: 229px;
+      width: 114px;
+      height: 120px;
+      background-color: #FF0;
+      border-radius: 16%;
+      z-index: 98;
+    }
+
+    .lampada--segmento-3 {
+      position: absolute;
+      top: 90px;
+      left: 180px;
+      width: 211px;
+      height: 163px;
+      background-color: #FF0;
+      border-radius: 50%;
+      z-index: 99;
+    }
+
+    .lampada--segmento-4 {
+      position: absolute;
+      top: 101px;
+      left: 188px;
+      width: 195px;
+      height: 163px;
+      background-color: #FF0;
+      border-radius: 50%;
+      z-index: 99;
+    }
+
+    .lampada--segmento-5 {
+      position: absolute;
+      top: -17px;
+      left: 195px;
+      width: 181px;
+      height: 319px;
+      background-color: #FF0;
+      border-radius: 50%;
+      z-index: 99;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="frame">
+    <div class="lampada">
+      <div class="lampada--segmento-1">
+        <div class="lampada--reflexo"></div>
+      </div>
+      <div class="lampada--segmento-2"></div>
+      <div class="lampada--segmento-3"></div>
+      <div class="lampada--segmento-4"></div>
+      <div class="lampada--segmento-5"></div>
+    </div>
+  </div>
+</body>
+</html>
