@@ -3,201 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <title>Lorem</title>
-  <style>
-
-    * {
-      /*outline: 1px solid red;*/
-    }
-
-
-    .frame {
-      width: 700px;
-      height: 432px;
-      outline: 1px solid whiteSmoke;
-      position: absolute;
-      left: 50%;
-      margin-left: -350px;
-      top: 50%;
-      margin-top: -216px;
-      /*background-image: url(lampada.png);*/
-    }
-
-    .lampada {
-    }
-
-
-    /* Bulbo -----------------------------------------------------------------*/
-
-    .lampada--bulbo--segmento-1 {
-      position: relative;
-      top: 33px;
-      margin: auto;
-      overflow: hidden;
-      width: 205px;
-      height: 204px;
-      border-radius: 50%;
-      background-color: #FF0;
-      /*opacity: 0.7;*/
-    }
-
-      .lampada--reflexo {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        width: 50%;
-        height: 50%;
-        background:
-          -webkit-radial-gradient(center center, 60% 60%, rgba(255, 255, 255, 1), rgba(255, 255, 0, 1)),
-          yellow;
-      }
-
-    .lampada--bulbo--segmento-2 {
-      position: relative;
-      top: -51px;
-      margin: auto;
-      width: 107px;
-      height: 154px;
-      background-color: #FF0;
-      /*opacity: 0.7;*/
-      border-radius: 20%;
-    }
-
-    .lampada--bulbo--segmento-3 {
-      position: relative;
-      top: -169px;
-      margin: auto;
-      width: 105px;
-      /*opacity: 0.7;*/
-
-      height: 0;
-      border-left: 35px solid transparent;
-      border-right: 35px solid transparent;
-      border-top: 55px solid yellow;
-    }
-
-    .lampada--bulbo--segmento-4 {
-      position: relative;
-      top: -209px;
-      margin: auto;
-      width: 87px;
-      /*opacity: 0.7;*/
-      height: 0;
-      border-left: 35px solid rgba(0, 0, 0, 0);
-      border-right: 35px solid rgba(0, 0, 0, 0);
-      border-top: 75px solid #FF0;
-    }
-
-    .lampada--bulbo--segmento-5 {
-      position: relative;
-      top: -291px;
-      margin: auto;
-      width: 90px;
-      /*opacity: 0.7;*/
-      height: 0;
-      border-left: 35px solid rgba(0, 0, 0, 0);
-      border-right: 35px solid rgba(0, 0, 0, 0);
-      border-top: 97px solid #FF0;
-    }
-
-
-    /* Bocal -----------------------------------------------------------------*/
-
-    .lampada--bocal--segmento-1 {
-      width: 85px;
-      border-left: 15px solid rgba(0, 0, 0, 0);
-      border-right: 15px solid rgba(0, 0, 0, 0);
-      border-top: 14px solid #808080;
-      position: absolute;
-      top: 294px;
-      left: 293px;
-    }
-
-    .lampada--bocal--segmento-2 {
-      width: 85px;
-      height: 56px;
-      background-color: #808080;
-      position: absolute;
-      top: 308px;
-      left: 308px;
-    }
-
-    .lampada--bocal--segmento-3 {
-      position: absolute;
-      top: 364px;
-      left: 308px;
-      width: 55px;
-      height: 0;
-      border-right: 15px solid rgba(0, 0, 0, 0);
-      border-left: 15px solid rgba(0, 0, 0, 0);
-      border-top: 13px solid #808080;
-    }
-
-    .lampada--bocal--segmento-4 {
-      position: absolute;
-      top: 377px;
-      left: 323px;
-      width: 25px;
-      height: 0;
-      border-right: 15px solid rgba(0, 0, 0, 0);
-      border-left: 15px solid rgba(0, 0, 0, 0);
-      border-top: 10px solid #2B2B2B;
-    }
-
-    .lampada--bocal--rosca-1 {
-      width: 93px;
-      position: absolute;
-      top: 350px;
-      left: 304px;
-      height: 10px;
-      border-radius: 5px;
-      background-color: #949494;
-      -webkit-transform: rotate(-3deg);
-    }
-
-    .lampada--bocal--rosca-2 {
-      width: 93px;
-      position: absolute;
-      top: 330px;
-      left: 304px;
-      height: 10px;
-      border-radius: 5px;
-      background-color: #949494;
-      -webkit-transform: rotate(-3deg);
-    }
-
-    .lampada--bocal--rosca-3 {
-      width: 93px;
-      position: absolute;
-      top: 310px;
-      left: 304px;
-      height: 10px;
-      border-radius: 5px;
-      background-color: #949494;
-      -webkit-transform: rotate(-3deg);
-    }
-
-  </style>
+  <link rel="stylesheet" href="main.css">
 </head>
 <body>
   <div class="frame">
     <div class="lampada">
-      <div class="lampada--bulbo">
-        <div class="lampada--bulbo--segmento-1">
-          <div class="lampada--reflexo"></div>
+      <div class="lampada__bulbo">
+        <div class="lampada__bulbo__segmento-1">
+          <div class="lampada__reflexo"></div>
         </div>
-        <div class="lampada--bulbo--segmento-2"></div>
-        <div class="lampada--bulbo--segmento-3"></div>
-        <div class="lampada--bulbo--segmento-4"></div>
-        <div class="lampada--bulbo--segmento-5"></div>
+        <div class="lampada__bulbo__segmento-2"></div>
+        <div class="lampada__bulbo__segmento-3"></div>
+        <div class="lampada__bulbo__segmento-4"></div>
+        <div class="lampada__bulbo__segmento-5"></div>
       </div>
-      <div class="lampada--bocal">
-        <div class="lampada--bocal--segmento-1"></div>
-        <div class="lampada--bocal--segmento-2"></div>
-        <div class="lampada--bocal--segmento-3"></div>
-        <div class="lampada--bocal--segmento-4"></div>
-        <div class="lampada--bocal--rosca-1"></div>
-        <div class="lampada--bocal--rosca-2"></div>
-        <div class="lampada--bocal--rosca-3"></div>
+      <div class="lampada__bocal">
+        <div class="lampada__bocal__segmento-1"></div>
+        <div class="lampada__bocal__segmento-2"></div>
+        <div class="lampada__bocal__segmento-3"></div>
+        <div class="lampada__bocal__segmento-4"></div>
+        <div class="lampada__bocal__rosca-1"></div>
+        <div class="lampada__bocal__rosca-2"></div>
+        <div class="lampada__bocal__rosca-3"></div>
       </div>
     </div>
   </div>
