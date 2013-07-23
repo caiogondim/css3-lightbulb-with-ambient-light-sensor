@@ -37,7 +37,7 @@ body {
 
 .lampada__bulbo__segmento-1 {
   position: absolute;
-  margin-top: -147px;
+  margin-top: -177px;
   top: 50%;
   left: 50%;
   margin-left: -102.5px;
@@ -75,7 +75,7 @@ body {
 
 .lampada__bulbo__segmento-2 {
   position: absolute;
-  margin-top: -10px;
+  margin-top: -40px;
   top: 50%;
   margin-left: -53.5px;
   left: 50%;
@@ -95,7 +95,7 @@ body {
 
 .lampada__bulbo__segmento-3 {
   position: absolute;
-  margin-top: 9px;
+  margin-top: -21px;
   top: 50%;
   margin-left: -87.5px;
   left: 50%;
@@ -116,7 +116,7 @@ body {
 
 .lampada__bulbo__segmento-4 {
   position: absolute;
-  margin-top: 24px;
+  margin-top: -6px;
   top: 50%;
   margin-left: -78.5px;
   left: 50%;
@@ -137,7 +137,7 @@ body {
 
 .lampada__bulbo__segmento-5 {
   position: absolute;
-  margin-top: 19px;
+  margin-top: -11px;
   top: 50%;
   left: 50%;
   margin-left: -80px;
@@ -161,7 +161,7 @@ body {
 
 .lampada__bocal__segmento-1 {
   width: 85px;
-  margin-top: 127px;
+  margin-top: 97px;
   top: 50%;
   left: 50%;
   margin-left: -57.5px;
@@ -175,7 +175,7 @@ body {
   width: 85px;
   height: 56px;
   top: 50%;
-  margin-top: 140px;
+  margin-top: 110px;
   left: 50%;
   margin-left: -42.5px;
   background-color: rgb(180, 180, 180);
@@ -185,7 +185,7 @@ body {
 .lampada__bocal__segmento-3 {
   position: absolute;
   top: 50%;
-  margin-top: 196px;
+  margin-top: 166px;
   left: 50%;
   margin-left: -42.5px;
   width: 55px;
@@ -198,7 +198,7 @@ body {
 .lampada__bocal__segmento-4 {
   position: absolute;
   top: 50%;
-  margin-top: 209px;
+  margin-top: 179px;
   left: 50%;
   margin-left: -27.5px;
   width: 25px;
@@ -211,7 +211,7 @@ body {
 .lampada__bocal__rosca-1 {
   width: 93px;
   position: absolute;
-  margin-top: 182px;
+  margin-top: 152px;
   top: 50%;
   left: 50%;
   margin-left: -46.5px;
@@ -226,7 +226,7 @@ body {
 .lampada__bocal__rosca-2 {
   width: 93px;
   position: absolute;
-  margin-top: 162px;
+  margin-top: 132px;
   top: 50%;
   left: 50%;
   margin-left: -46.5px;
@@ -241,7 +241,7 @@ body {
 .lampada__bocal__rosca-3 {
   width: 93px;
   position: absolute;
-  margin-top: 142px;
+  margin-top: 112px;
   top: 50%;
   left: 50%;
   margin-left: -46.5px;
