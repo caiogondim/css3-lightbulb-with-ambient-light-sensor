@@ -3,9 +3,9 @@ $(window).on('devicelight', function(event) {
   console.log(luminosidade)
 
   if (luminosidade <= 10) {
-    $('.lampada').addClass('lampada--is-acesa')
+    $('body').addClass('lampada--is-acesa')
   } else {
-    $('.lampada').removeClass('lampada--is-acesa')
+    $('body').removeClass('lampada--is-acesa')
   }
 })
 

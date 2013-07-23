@@ -1,25 +1,31 @@
 * {
-  /*outline: 1px solid red;*/
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
+html {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
 
 .frame {
-  width: 700px;
-  height: 432px;
+  width: 100%;
+  height: 100%;
   outline: 1px solid whiteSmoke;
   position: absolute;
-  left: 50%;
-  margin-left: -350px;
-  top: 50%;
-  margin-top: -216px;
-  /*background-image: url(lampada.png);*/
   overflow: hidden;
 }
 
 .lampada {
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 .lampada--is-acesa {
@@ -27,117 +33,123 @@
 }
 
 
-/* Bulbo -----------------------------------------------------------------*/
+/* Bulbo ---------------------------------------------------------------------*/
 
 .lampada__bulbo__segmento-1 {
-  position: relative;
-  top: 33px;
-  margin: auto;
+  position: absolute;
+  margin-top: -147px;
+  top: 50%;
+  left: 50%;
+  margin-left: -102.5px;
   overflow: hidden;
   width: 205px;
   height: 204px;
   border-radius: 50%;
-  background-color: rgb(225, 225, 225);
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  transition-delay: 0.2s;
-}
-
-  .lampada__reflexo {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 50%;
-    height: 50%;
-    opacity: 0;
-    background:
-      radial-gradient(center center, 60% 60%, rgba(255, 255, 255, 1), rgba(255, 255, 0, 0)),
-      yellow;
-  }
-
-.lampada__bulbo__segmento-2 {
-  position: relative;
-  top: -51px;
-  margin: auto;
-  width: 107px;
-  height: 154px;
-  background-color: rgb(225, 225, 225);
-  /*opacity: 0.7;*/
-  border-radius: 20%;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  transition-delay: 0.2s;
-}
-
-.lampada__bulbo__segmento-3 {
-  position: relative;
-  top: -169px;
-  margin: auto;
-  width: 105px;
-  /*opacity: 0.7;*/
-  height: 0;
-  border-left: 35px solid transparent;
-  border-right: 35px solid transparent;
-  border-top: 55px solid rgb(225, 225, 225);
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  transition-delay: 0.2s;
-}
-
-.lampada__bulbo__segmento-4 {
-  position: relative;
-  top: -209px;
-  margin: auto;
-  width: 87px;
-  /*opacity: 0.7;*/
-  height: 0;
-  border-left: 35px solid transparent;
-  border-right: 35px solid transparent;
-  border-top: 75px solid rgb(225, 225, 225);
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  transition-delay: 0.2s;
-}
-
-.lampada__bulbo__segmento-5 {
-  position: relative;
-  top: -291px;
-  margin: auto;
-  width: 90px;
-  /*opacity: 0.7;*/
-  height: 0;
-  border-left: 35px solid transparent;
-  border-right: 35px solid transparent;
-  border-top: 97px solid rgb(225, 225, 225);
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  transition-delay: 0.2s;
+  background-color: #E1E1E1;
+  transition:
+    background-color .5s ease-in-out,
+    box-shadow .5s ease-in-out;
+  transition-delay: .2s;
 }
 
 .lampada--is-acesa .lampada__bulbo__segmento-1 {
   background-color: #FF0;
-  box-shadow: 0px 0px 800px 80px rgba(255,210,00,1);
+  box-shadow: 0 0 800px 80px rgba(255,210,00,1);
+}
+
+.lampada__reflexo {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 50%;
+  height: 50%;
+  opacity: 0;
+  background:
+    radial-gradient(center center, 60% 60%, rgba(255, 255, 255, 1), rgba(255, 255, 0, 0)),
+    yellow;
 }
 
 .lampada--is-acesa .lampada__reflexo {
   opacity: 1;
 }
 
+.lampada__bulbo__segmento-2 {
+  position: absolute;
+  margin-top: -10px;
+  top: 50%;
+  margin-left: -53.5px;
+  left: 50%;
+  width: 107px;
+  height: 154px;
+  background-color: #E1E1E1;
+  border-radius: 20%;
+  transition:
+    background-color .5s ease-in-out,
+    box-shadow .5s ease-in-out;
+  transition-delay: .2s;
+}
+
 .lampada--is-acesa .lampada__bulbo__segmento-2 {
   background-color: #FF0;
+}
+
+.lampada__bulbo__segmento-3 {
+  position: absolute;
+  margin-top: 9px;
+  top: 50%;
+  margin-left: -87.5px;
+  left: 50%;
+  width: 105px;
+  height: 0;
+  border-left: 35px solid rgba(0, 0, 0, 0);
+  border-right: 35px solid rgba(0, 0, 0, 0);
+  border-top: 55px solid #E1E1E1;
+  transition:
+    border .5s ease-in-out,
+    box-shadow .5s ease-in-out;
+  transition-delay: .2s;
 }
 
 .lampada--is-acesa .lampada__bulbo__segmento-3 {
   border-top: 55px solid yellow;
 }
 
+.lampada__bulbo__segmento-4 {
+  position: absolute;
+  margin-top: 24px;
+  top: 50%;
+  margin-left: -78.5px;
+  left: 50%;
+  width: 87px;
+  height: 0;
+  border-left: 35px solid rgba(0, 0, 0, 0);
+  border-right: 35px solid rgba(0, 0, 0, 0);
+  border-top: 115px solid #E1E1E1;
+  transition:
+    border .5s ease-in-out,
+    box-shadow .5s ease-in-out;
+  transition-delay: .2s;
+}
+
 .lampada--is-acesa .lampada__bulbo__segmento-4 {
-  border-top: 75px solid #FF0;
+  border-top: 115px solid #FF0;
+}
+
+.lampada__bulbo__segmento-5 {
+  position: absolute;
+  margin-top: 19px;
+  top: 50%;
+  left: 50%;
+  margin-left: -80px;
+  width: 90px;
+  height: 0;
+  border-left: 35px solid rgba(0, 0, 0, 0);
+  border-right: 35px solid rgba(0, 0, 0, 0);
+  border-top: 97px solid #E1E1E1;
+  transition:
+    border .5s ease-in-out,
+    box-shadow .5s ease-in-out;
+  transition-delay: .2s;
 }
 
 .lampada--is-acesa .lampada__bulbo__segmento-5 {
@@ -145,31 +157,37 @@
 }
 
 
-/* Bocal -----------------------------------------------------------------*/
+/* Bocal ---------------------------------------------------------------------*/
 
 .lampada__bocal__segmento-1 {
   width: 85px;
+  margin-top: 127px;
+  top: 50%;
+  left: 50%;
+  margin-left: -57.5px;
   border-left: 15px solid rgba(0, 0, 0, 0);
   border-right: 15px solid rgba(0, 0, 0, 0);
   border-top: 14px solid rgb(180, 180, 180);
   position: absolute;
-  top: 294px;
-  left: 293px;
 }
 
 .lampada__bocal__segmento-2 {
   width: 85px;
   height: 56px;
+  top: 50%;
+  margin-top: 140px;
+  left: 50%;
+  margin-left: -42.5px;
   background-color: rgb(180, 180, 180);
   position: absolute;
-  top: 308px;
-  left: 308px;
 }
 
 .lampada__bocal__segmento-3 {
   position: absolute;
-  top: 364px;
-  left: 308px;
+  top: 50%;
+  margin-top: 196px;
+  left: 50%;
+  margin-left: -42.5px;
   width: 55px;
   height: 0;
   border-right: 15px solid rgba(0, 0, 0, 0);
@@ -179,8 +197,10 @@
 
 .lampada__bocal__segmento-4 {
   position: absolute;
-  top: 377px;
-  left: 323px;
+  top: 50%;
+  margin-top: 209px;
+  left: 50%;
+  margin-left: -27.5px;
   width: 25px;
   height: 0;
   border-right: 15px solid rgba(0, 0, 0, 0);
@@ -191,38 +211,44 @@
 .lampada__bocal__rosca-1 {
   width: 93px;
   position: absolute;
-  top: 350px;
-  left: 304px;
+  margin-top: 182px;
+  top: 50%;
+  left: 50%;
+  margin-left: -46.5px;
   height: 10px;
   border-radius: 5px;
   background-color: rgb(165, 165, 165);
-  -webkit-transform: rotate(-3deg);
-  -moz-transform: rotate(-3deg);
   transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: -moz-rotate(-3deg);
 }
 
 .lampada__bocal__rosca-2 {
   width: 93px;
   position: absolute;
-  top: 330px;
-  left: 304px;
+  margin-top: 162px;
+  top: 50%;
+  left: 50%;
+  margin-left: -46.5px;
   height: 10px;
   border-radius: 5px;
   background-color: rgb(165, 165, 165);
-  -webkit-transform: rotate(-3deg);
-  -moz-transform: rotate(-3deg);
   transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: -moz-rotate(-3deg);
 }
 
 .lampada__bocal__rosca-3 {
   width: 93px;
   position: absolute;
-  top: 310px;
-  left: 304px;
+  margin-top: 142px;
+  top: 50%;
+  left: 50%;
+  margin-left: -46.5px;
   height: 10px;
   border-radius: 5px;
   background-color: rgb(165, 165, 165);
-  -webkit-transform: rotate(-3deg);
-  -moz-transform: rotate(-3deg);
   transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: -moz-rotate(-3deg);
 }
