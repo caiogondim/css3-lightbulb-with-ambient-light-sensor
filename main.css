@@ -14,12 +14,12 @@ body {
   height: 100%;
   width: 100%;
   position: absolute;
+  background-color: whiteSmoke;
 }
 
 .frame {
   width: 100%;
   height: 100%;
-  outline: 1px solid whiteSmoke;
   position: absolute;
   overflow: hidden;
 }
