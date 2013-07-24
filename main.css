@@ -15,6 +15,7 @@ body {
   width: 100%;
   position: absolute;
   background-color: whiteSmoke;
+  transition: background-color .5s ease-in-out;
 }
 
 .frame {
