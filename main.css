@@ -253,3 +253,53 @@ body {
   -webkit-transform: rotate(-3deg);
   -moz-transform: -moz-rotate(-3deg);
 }
+
+
+/* Modal ---------------------------------------------------------------------*/
+
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.modal--is-visible {
+  display: block;
+}
+
+.modal__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal__msg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  margin-top: -50px;
+  margin-left: -165px;
+  padding: 30px;
+  width: 270px;
+  height: 50px;
+  border-radius: 4px;
+  background-color: whiteSmoke;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  color: #333;
+  text-align: center;
+  font-weight: 300;
+  font-size: 20px;
+  font-family:
+    "HelveticaNeue-Light",
+    "Helvetica Neue Light",
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    "Lucida Grande",
+    sans-serif;
+}

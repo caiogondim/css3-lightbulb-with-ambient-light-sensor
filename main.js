@@ -9,6 +9,9 @@ window.addEventListener('devicelight', function(event) {
 })
 
 if (!('ondevicelight' in window)) {
-  console.log('seu navagador nao suporta device light')
+  document
+    .querySelector('.modal')
+    .classList
+    .add('modal--is-visible')
 }
 
